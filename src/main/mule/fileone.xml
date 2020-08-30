@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:file="http://www.mulesoft.org/schema/mule/file" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/file/current/mule-file.xsd">
+	<file:config name="File_Config" doc:name="File Config" doc:id="720321dd-f3d0-4d5f-b0d0-ececceb2fe1e" />
+	<flow name="fileoneFlow" doc:id="93c80e67-02c3-4393-99d9-4eb2ffbec157" >
+		<file:read doc:name="Read" doc:id="10f1a6dc-23d0-499b-9c21-206a7493cf78" config-ref="File_Config" path="C:\Users\Sakthi Kinnera\AnypointStudio\studio-workspace\fileone\src\main\resources\Input\file"/>
+	</flow>
+</mule>
